@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="robots" content="follow,index">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login Page</title>
+	
+
+	<link rel="icon" type="image/png" sizes="32x32"
+		href="https://mazipan.github.io/login-page-css/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96"
+		href="https://mazipan.github.io/login-page-css/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16"
+		href="https://mazipan.github.io/login-page-css/favicon/favicon-16x16.png">
+
+	<link rel="manifest" href="https://mazipan.github.io/login-page-css/manifest.json">
+
+	<meta name="msapplication-TileColor" content="#848ab0">
+	<meta name="msapplication-TileImage" content="https://mazipan.github.io/login-page-css/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#848ab0">
+
+	<link rel="stylesheet" href="../shared/normalize.css">
+	<link rel="stylesheet" href="../shared/additional.css">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+	
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-25065548-2"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-25065548-2');
+	</script>
+
+
+</head>
+
+<body>
+	<div class="content-body">
+		<div class="form-wrapper">
+			<form class="bg-white">
+				<h1 class="text-title">Login</h1>
+				
+				<div class="field-group">
+					<label class="label" for="txt-email">Email address</label>
+					<input class="input" type="text" id="txt-email" name="email" placeholder="Enter email" />
+				</div>
+				<div class="field-group">
+					<label class="label" for="txt-password">Password</label>
+					<input class="input" type="password" id="txt-password" name="password" placeholder="Enter password" />
+					<a href="#forgot" class="link-forgot">Forgot?</a>
+				</div>
+
+				<div class="field-group">
+					<input class="btn-submit" {
+                                  background-color:#848ab0;
+                                  }  type="submit" value="Log In" onclick="my()"/>
+                                 
+				</div>
+                                <script>
+                                  function my() {
+                                      alert("Login Sucessful!");
+                                                 }
+                                </script>
+                                
+                              
+			</form>
+
+			<div class="bg-grey">
+				<a href="signup.html" class="link-register">Sign Up</a>
+				<small class="link-about">To Know More? <a href="index.html">Click Here</a></small>
+			</div>
+		</div>
+	</div>
+
+	
+</body>
+
+</html>
